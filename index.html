@@ -27,9 +27,9 @@
     
  <?php  
 /*Connect using SQL Server authentication.*/  
-$serverName = "tcp:servername.database.windows.net,1433";  
+$serverName = "tcp:Bikerack001.database.windows.net,1433";  
 $connectionOptions = array(  
-    "Database" => "bikerack001.database.windows.net",  
+    "Database" => "BikeRack",  
     "UID" => "BikeRack001",  
     "PWD" => "BR/001001"  
 );  
@@ -41,7 +41,7 @@ if ($conn === false)
     }  
  
 /*Display Space Data.*/  
-/*$sql = SELECT * FROM dbo.location ORDER BY Street"; 
+/*$sql = SELECT * FROM dbo.Locations ORDER BY Street"; 
 $stmt = sqlsrv_query($conn, $sql); 
 if($stmt === false) 
 { 

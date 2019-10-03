@@ -45,7 +45,7 @@ $serverName = "tcp:Bikerack001.database.windows.net,1433";
      }
  
 /*Display Space Data.*/  
-    /*$sql = SELECT * FROM dbo.Locations ORDER BY Street"; 
+    $sql = SELECT * FROM dbo.Locations ORDER BY Street"; 
     $stmt = sqlsrv_query($conn, $sql); 
     if($stmt === false) 
     { 
@@ -68,7 +68,7 @@ $serverName = "tcp:Bikerack001.database.windows.net,1433";
     print("<td>".$row['Weather_Coverage']."</td></tr>"); 
   } 
 print("</table>"); 
-}*/  
+} 
 ?> 
 
   </body>

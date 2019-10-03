@@ -45,7 +45,12 @@ $serverName = "tcp:Bikerack001.database.windows.net,1433";
      }
  
 /*Display Space Data.*/  
-    $sql = SELECT * FROM dbo.Locations ORDER BY Street"; 
+    $sql = "SELECT 
+               Street,
+               Rack_Style,
+               Bike_Capacity,
+               Weather_Coverage
+            FROM dbo.Locations ORDER BY Street"; 
     $stmt = sqlsrv_query($conn, $sql); 
     if($stmt === false) 
     { 

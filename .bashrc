@@ -115,4 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+<<<<<<< HEAD
 export PATH="$PATH:/opt/mssql-tools/bin"
+=======
+>>>>>>> 1191151de0000204ff4fc9af8974619851f2d157
